@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Our Village</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,8 +15,69 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <h1>Welcome to Our Village!</h1>
-  <p>This is the official website for our wonderful village. We are a close-knit community nestled in a beautiful valley. Explore our website to learn more about our history, services, and how to get in touch.</p>
-  <p>We hope you enjoy your virtual visit and look forward to welcoming you in person soon!</p>
+
+  <div class="container">
+    <header class="text-center mt-2 mb-2">
+      <h1>Welcome to Our Village!</h1>
+      <p class="lead">Discover the charm and warmth of our vibrant community, nestled in a picturesque valley where tradition meets modern living.</p>
+    </header>
+
+    <section id="introduction" class="mb-2">
+      <p>Welcome to the official online home of Our Village! We are a friendly, close-knit community with a rich heritage and a bright future. Whether you're a resident, a visitor, or just curious, we invite you to explore our website to learn more about our history, local services, upcoming events, and how to connect with us.</p>
+      <p>We hope you enjoy your virtual visit and look forward to welcoming you to experience the unique spirit of Our Village in person soon!</p>
+    </section>
+
+    <section id="news" class="mb-2">
+      <h2 class="text-center">Village News & Announcements</h2>
+      <article class="news-item p-1 mb-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h3>Annual Village Fair Preparations Underway!</h3>
+        <p>Preparations are in full swing for our much-anticipated Annual Village Fair, happening on the first weekend of July. Expect exciting games, delicious local food, unique crafts, and fun for the whole family. Stay tuned for a detailed schedule of events!</p>
+      </article>
+      <article class="news-item p-1 mb-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h3>Community Hall Renovation Update</h3>
+        <p>The Community Hall renovation project is progressing well. The new roof is complete, and interior painting will begin next week. We anticipate a grand reopening in early August. Thank you for your patience!</p>
+      </article>
+      <article class="news-item p-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h3>Reminder: Main Street Road Works</h3>
+        <p>A friendly reminder that essential road maintenance work will be carried out on Main Street from June 15th to June 20th. Please allow for extra travel time and follow detour signs. We appreciate your cooperation in improving our village infrastructure.</p>
+      </article>
+    </section>
+
+    <section id="events" class="mb-2">
+      <h2 class="text-center">Upcoming Events</h2>
+      <div class="event-item p-1 mb-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h4>Farmers Market</h4>
+        <p><strong>Date:</strong> Every Saturday, 9:00 AM - 1:00 PM</p>
+        <p>Discover fresh local produce, delicious baked goods, artisan crafts, and more at our weekly Farmers Market. Support local vendors and enjoy the community atmosphere!</p>
+      </div>
+      <div class="event-item p-1 mb-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h4>Town Hall Meeting</h4>
+        <p><strong>Date:</strong> First Monday of the Month, 7:00 PM</p>
+        <p>Join us for our monthly Town Hall Meeting to discuss local community initiatives, upcoming projects, and voice your opinions. All residents are welcome!</p>
+      </div>
+      <div class="event-item p-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <h4>Summer Music Festival - Save the Date!</h4>
+        <p><strong>Date:</strong> August 5th - 7th</p>
+        <p>Get ready for a fantastic weekend of live music from talented local bands and artists at our annual Summer Music Festival. More details and ticket information coming soon!</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="text-center mb-2">
+      <h2>Photo Gallery</h2>
+      <p>Take a virtual stroll through Our Village and experience its beauty. This gallery showcases the picturesque landscapes, charming streets, and vibrant community life that make our village a special place to live and visit.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;" class="mt-1">
+        <img src="https://placekitten.com/200/150?image=1" alt="Cute kitten placeholder image 1" style="border-radius: 5px;">
+        <img src="https://placekitten.com/200/150?image=2" alt="Cute kitten placeholder image 2" style="border-radius: 5px;">
+        <img src="https://placekitten.com/200/150?image=3" alt="Cute kitten placeholder image 3" style="border-radius: 5px;">
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="text-center p-1 mt-2" style="background-color: var(--neutral-color-light); color: var(--neutral-color-dark);">
+    <p>&copy; 2023 Our Village. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

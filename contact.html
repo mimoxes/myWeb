@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,20 +15,73 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <h1>Contact Our Village</h1>
-  <p>We'd love to hear from you! Whether you have a question, a suggestion, or just want to say hello, please feel free to get in touch using the details below:</p>
-  <p>
-    <strong>Address:</strong><br>
-    [Street Address]<br>
-    [Village Name], [State/Province] [Zip/Postal Code]<br>
-    [Country]
-  </p>
-  <p>
-    <strong>Phone:</strong> [Phone Number]
-  </p>
-  <p>
-    <strong>Email:</strong> <a href="mailto:[Email Address]">[Email Address]</a>
-  </p>
-  <p>You can also visit the Village Office during opening hours: [Opening Hours].</p>
+
+  <div class="container">
+    <header class="text-center mt-2 mb-2">
+      <h1>Contact Our Village</h1>
+    </header>
+
+    <section id="contact-info" class="mb-2">
+      <h2 class="text-center">Get in Touch</h2>
+      <div class="p-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <p>We welcome your inquiries, feedback, and engagement! Whether you have a question about village services, an idea to share, or simply want to connect, please don't hesitate to reach out using the contact details provided below. Our team is here to assist you.</p>
+        <address class="mt-1 mb-1">
+          <strong>Village Administration Office:</strong><br>
+          [123 Main Street]<br>
+          Our Village, [Province/State], [A1B 2C3]<br>
+          [Country]
+        </address>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+1-555-123-4567">+1-555-123-4567</a>
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:info@ourvillage.example.com">info@ourvillage.example.com</a>
+        </p>
+        <p>
+          <strong>Village Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM. Closed on public holidays.
+        </p>
+      </div>
+    </section>
+
+    <section id="location-map" class="mb-2">
+      <h2 class="text-center">Our Location</h2>
+      <div id="map-placeholder" style="width:100%; height:300px; background-color:#eee; text-align:center; line-height:300px; border-radius: 5px;">
+        [Interactive Map Placeholder - e.g., Google Maps Embed showing Our Village]
+      </div>
+    </section>
+
+    <section id="contact-form-section" class="mb-2">
+      <h2 class="text-center">Send Us a Message</h2>
+      <form action="#" method="POST" class="p-1" style="border: 1px solid var(--neutral-color-light); border-radius: 5px;">
+        <p class="text-center mb-1"><em>We aim to respond to all inquiries within 2 business days.</em></p>
+        <div class="form-group mb-1">
+          <label for="contact-name">Your Name:</label>
+          <input type="text" id="contact-name" name="name" required style="width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 3px;">
+        </div>
+        <div class="form-group mb-1">
+          <label for="contact-email">Your Email:</label>
+          <input type="email" id="contact-email" name="email" required style="width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 3px;">
+        </div>
+        <div class="form-group mb-1">
+          <label for="contact-subject">Subject:</label>
+          <input type="text" id="contact-subject" name="subject" required style="width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 3px;">
+        </div>
+        <div class="form-group mb-1">
+          <label for="contact-message">Message:</label>
+          <textarea id="contact-message" name="message" rows="5" required style="width: 100%; padding: 0.5em; border: 1px solid #ccc; border-radius: 3px;"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="p-1" style="background-color: var(--primary-color); color: var(--neutral-color-light); border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+  <footer class="text-center p-1 mt-2" style="background-color: var(--neutral-color-light); color: var(--neutral-color-dark);">
+    <p>&copy; 2023 Our Village. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

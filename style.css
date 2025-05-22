@@ -1,15 +1,32 @@
+/* Import Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Color Palette CSS Variables */
+:root {
+  --primary-color: #2c3e50; /* Dark Blue/Grey */
+  --secondary-color: #3498db; /* Bright Blue */
+  --accent-color: #e74c3c; /* Red/Orange */
+  --neutral-color-light: #ecf0f1; /* Light Grey */
+  --neutral-color-dark: #333; /* Dark Grey for text */
+  --background-color: #ffffff; /* White */
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--neutral-color-dark);
 }
 
 h1, h2 {
   font-size: 2em; /* h1 */
   margin: 0.5em 0;
+  color: var(--primary-color);
 }
 
 h2 {
   font-size: 1.5em;
+  color: var(--primary-color);
 }
 
 p {
@@ -18,12 +35,79 @@ p {
 }
 
 nav {
-  background-color: #f0f0f0;
+  background-color: var(--primary-color); /* Updated from #f0f0f0 */
   padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center nav items */
+}
+
+nav ul li {
+  display: inline-block; /* Horizontal navigation */
+  margin-right: 1em;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
-  margin-right: 1em;
+  color: var(--neutral-color-light); /* Updated from #333 */
+  font-weight: bold;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--secondary-color); /* Accent color for hover */
+}
+
+/* Container Class */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below images */
+}
+
+/* Utility Classes */
+.mt-1 { margin-top: 1em; }
+.mt-2 { margin-top: 2em; }
+.mb-1 { margin-bottom: 1em; }
+.mb-2 { margin-bottom: 2em; }
+.p-1 { padding: 1em; }
+.p-2 { padding: 2em; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Basic Responsive Setup */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  nav ul li {
+    display: block; /* Stack navigation links vertically */
+    margin-right: 0;
+    margin-bottom: 0.5em; /* Add some space between stacked links */
+  }
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+  .container {
+    padding: 0.5em; /* Reduce padding on smaller screens */
+  }
 }
